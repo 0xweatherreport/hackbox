@@ -4,6 +4,10 @@
 		"dockerfile": "Dockerfile"
 	},
 
+	"features": {
+    	"ghcr.io/devcontainers/features/go:1": {}
+	},
+
 	// Allow the container to interact with host networking
 	"runArgs": ["--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun"],
 
