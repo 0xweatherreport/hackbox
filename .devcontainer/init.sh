@@ -13,6 +13,7 @@ sudo apt-get install -y ftp
 sudo apt-get install -y smbclient
 sudo apt install -y redis-tools
 sudo apt-get install -y lynx
+sudo apt-get install -y mysql*
 
 # Go installs
 go install github.com/OJ/gobuster/v3@latest
