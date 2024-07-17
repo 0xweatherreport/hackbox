@@ -1,15 +1,6 @@
 FROM mcr.microsoft.com/vscode/devcontainers/base:0-bullseye
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update \
-    # Install tools for hackthebox
-    && apt-get install -y iputils-ping \
-    && apt install -y nmap \
-    && apt-get install -y telnet \
-    && apt-get install -y ftp \
-    && apt-get install -y smbclient \
-    && apt install -y redis-tools \
-    && apt-get install -y lynx \
-    
     #
     # Install openvpn client
     && apt-get -y install --no-install-recommends openvpn \

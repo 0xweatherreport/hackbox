@@ -1,7 +1,7 @@
 {
 	"name": "hackbox",
 	"build": {
-		"dockerfile": "Dockerfile",
+		"dockerfile": "Dockerfile"
 	},
 
 	// Allow the container to interact with host networking
@@ -9,6 +9,9 @@
 
 	// Save the contents of the OPENVPN_CONFIG secret to disk - it lands in .devcontainer/openvpn-tmp
 	"initializeCommand": "bash .devcontainer/save-config.sh",
+
+	// Install additional packages
+	"onCreateCommand": "bash .devcontainer/init.sh",
 
 	// [Optional] Once the dev container is running, automatically start up the VPN client
 	"postStartCommand": "bash .devcontainer/start-openvpn.sh",
