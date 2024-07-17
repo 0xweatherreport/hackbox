@@ -8,6 +8,8 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update \
     && apt-get install -y ftp \
     && apt-get install -y smbclient \
     && apt install -y redis-tools \
+    && apt-get install -y lynx \
+    
     #
     # Install openvpn client
     && apt-get -y install --no-install-recommends openvpn \
