@@ -5,6 +5,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && apt-get update \
     && apt-get install -y iputils-ping \
     && apt install -y nmap \
     && apt-get install -y telnet \
+    && apt-get install -y ftp \
     #
     # Install openvpn client
     && apt-get -y install --no-install-recommends openvpn \
