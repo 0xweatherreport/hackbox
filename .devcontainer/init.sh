@@ -5,15 +5,15 @@ set -e
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 # Install packages
-sudo apt-get update
-sudo apt-get install -y iputils-ping
-sudo apt install -y nmap
-sudo apt-get install -y telnet
-sudo apt-get install -y ftp
-sudo apt-get install -y smbclient
-sudo apt install -y redis-tools
-sudo apt-get install -y lynx
-sudo apt-get install -y mysql*
+#sudo apt-get update
+#sudo apt-get install -y iputils-ping
+#sudo apt install -y nmap
+#sudo apt-get install -y telnet
+#sudo apt-get install -y ftp
+#sudo apt-get install -y smbclient
+#sudo apt install -y redis-tools
+#sudo apt-get install -y lynx
+#sudo apt-get install -y mysql*
 
 # Go installs
-go install github.com/OJ/gobuster/v3@latest
+#go install github.com/OJ/gobuster/v3@latest

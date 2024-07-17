@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/vscode/devcontainers/base:0-bullseye
+FROM kalilinux/kali-rolling:latest
 
 RUN export DEBIAN_FRONTEND=noninteractive && apt-get update \
     #

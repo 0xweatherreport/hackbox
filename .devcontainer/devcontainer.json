@@ -4,10 +4,10 @@
 		"dockerfile": "Dockerfile"
 	},
 
-	"features": {
-    	"ghcr.io/devcontainers/features/go:1": {},
-		"ghcr.io/devcontainers/features/python:1": {}
-	},
+	//"features": {
+	//	"ghcr.io/devcontainers/features/go:1": {},
+	//	"ghcr.io/devcontainers/features/python:1": {}
+	//},
 
 	// Allow the container to interact with host networking
 	"runArgs": ["--cap-add=NET_ADMIN", "--cap-add=NET_RAW", "--device=/dev/net/tun"],
@@ -19,8 +19,5 @@
 	"onCreateCommand": "bash .devcontainer/init.sh",
 
 	// [Optional] Once the dev container is running, automatically start up the VPN client
-	"postStartCommand": "bash .devcontainer/start-openvpn.sh",
-
-	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"postStartCommand": "bash .devcontainer/start-openvpn.sh"
 }
