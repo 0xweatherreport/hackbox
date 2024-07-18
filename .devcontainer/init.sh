@@ -5,7 +5,9 @@ set -e
 cd "$( dirname "${BASH_SOURCE[0]}" )"
 
 # Install packages
-#sudo apt-get update
+export DEBIAN_FRONTEND=noninteractive
+apt update
+apt install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" kali-linux-headless
 #sudo apt-get install -y iputils-ping
 #sudo apt install -y nmap
 #sudo apt-get install -y telnet
