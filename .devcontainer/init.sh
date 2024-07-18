@@ -19,3 +19,8 @@ apt install -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-
 
 # Go installs
 #go install github.com/OJ/gobuster/v3@latest
+
+# Git config
+git config --global core.editor "code -w"
+git config --global user.email "39281290+0xweatherreport@users.noreply.github.com"
+git config --global user.name "0xweatherreport"
