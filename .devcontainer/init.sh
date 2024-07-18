@@ -17,3 +17,6 @@ go install github.com/OJ/gobuster/v3@latest
 git config --global core.editor "code -w"
 git config --global user.email "39281290+0xweatherreport@users.noreply.github.com"
 git config --global user.name "0xweatherreport"
+
+# Other OS setup stuff
+gzip -d rockyou.txt.gz
