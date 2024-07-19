@@ -20,3 +20,4 @@ git config --global user.name "0xweatherreport"
 
 # Other OS setup stuff
 gzip -d rockyou.txt.gz
+echo "alias cd='HOME=/workspaces/$RepositoryName cd'" >> ~/.bash_aliases
